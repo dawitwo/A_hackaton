@@ -1,0 +1,22 @@
+# Slide 1 — Problem & data
+Three tables: plot surveys (15k train / 3.75k test), monthly regional
+weather, market prices. Predict yield (t/ha) for 2024 and earlier years.
+
+# Slide 2 — Cleaning & integration
+Region labels had 20 spellings; weather had abbreviated forms.
+Growing season = planting month + 3. Weather dedup 232 → 226.
+Row count unchanged after join.
+
+# Slide 3 — What the data says
+(fig04) Region × crop mean yield — SNNPR maize is strongest.
+(fig09) Revenue per hectare — maize beats teff because prices are higher.
+
+# Slide 4 — Modeling
+Mean baseline vs Ridge vs RF vs HGB; HGB wins after tuning.
+Weather ablation: RMSE drops from X to Y (see D5).
+CV 5-fold RMSE: reported in D3.
+
+# Slide 5 — Wrap up
+Error analysis: residuals fan at high yield.
+Demo: local Gradio, one-command.
+Next: prediction intervals, drift monitor.

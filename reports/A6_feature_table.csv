@@ -1,0 +1,9 @@
+feature,formula,source,why
+season_mean_temp,mean(avg_temp_c),weather.avg_temp_c,Growing-season temperature signal
+season_total_rain,sum(monthly_rainfall_mm),weather.monthly_rainfall_mm,Water availability over the season
+season_extreme_heat,sum(extreme_heat_days),weather.extreme_heat_days,Heat stress indicator
+season_months_count,count(avg_temp_c),weather.avg_temp_c,Data completeness
+temp_dev,season_mean_temp - region_year_temp,derived,Anomaly vs region's typical temp
+rain_dev,season_total_rain - region_year_rain,derived,Anomaly vs region's typical rainfall
+fert_x_seed,fertilizer_kg_per_ha × improved_seed_used,derived,Interaction of inputs
+planting_month_num,month name → 1..12,plot.planting_month,Captures seasonal timing
