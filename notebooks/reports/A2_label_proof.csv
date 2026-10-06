@@ -1,6 +1,0 @@
-table,column,before,after
-train,region,19,5
-test,region,20,5
-weather,region,20,5
-prices,region,5,5
-prices,crop_type,14,5

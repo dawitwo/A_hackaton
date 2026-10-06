@@ -2,5 +2,6 @@
 venv/
 __pycache__/
 .ipynb_checkpoints/
+.gradio/
 *.pyc
 .DS_Store
