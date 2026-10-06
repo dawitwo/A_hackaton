@@ -12,3 +12,18 @@
 - **fig10_model_comparison.png** — Validation RMSE for each model family, with the mean baseline marked and CV error bars on the winner.
 - **fig11_predicted_vs_actual_residuals.png** — Predicted vs actual and residuals. Residuals fan out at higher yield, which the error analysis discusses.
 - **fig12_feature_importance.png** — Permutation importances for top features, with weather-derived features highlighted in orange.
+
+
+## fig10 â€” Model comparison
+Validation RMSE for each model tried (mean baseline, Ridge, Random
+Forest, HistGradientBoosting). The best model (lowest bar) was selected
+as the final model.
+
+## fig11 â€” Predicted vs actual (validation)
+Each point is one validation plot. The red dashed line is y = x;
+points close to it mean the model tracks actual yield well. Residuals
+fan slightly at high yields.
+
+## fig12 â€” Top 15 feature importances
+Permutation/impurity importance of the top features in the final model.
+Weather-derived features appear near the top, satisfying Rule 5.
